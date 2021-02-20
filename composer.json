@@ -1,0 +1,27 @@
+{
+    "name": "akimmaksimov85/tester",
+    "description": "Clean Architecture Code Tester",
+    "type": "symfony-bundle",
+    "license": "proprietary",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4",
+        "ext-ctype": "*",
+        "ext-iconv": "*",
+        "symfony/console": "5.2.*",
+        "symfony/dotenv": "5.2.*",
+        "symfony/flex": "^1.3.1",
+        "symfony/framework-bundle": "5.2.*",
+        "symfony/yaml": "5.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Akimmaksimov85\\TesterBundle\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Akimmaksimov85\\TesterBundle\\Tests\\": "tests"
+        }
+    }
+}
