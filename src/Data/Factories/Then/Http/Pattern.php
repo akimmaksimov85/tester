@@ -5,10 +5,10 @@
 
 declare(strict_types=1);
 
-namespace Akimmaksimov85\TesterBundle\Data\Factories\Functional\Then\Http;
+namespace Akimmaksimov85\TesterBundle\Data\Factories\Then\Http;
 
-use Akimmaksimov85\TesterBundle\Data\Factories\Functional\Then\AbstractThen;
-use Akimmaksimov85\TesterBundle\Data\Factories\Functional\Then\ThenInterface;
+use Akimmaksimov85\TesterBundle\Data\Factories\Then\AbstractThen;
+use Akimmaksimov85\TesterBundle\Data\Factories\Then\ThenInterface;
 use Symfony\Bundle\FrameworkBundle\KernelBrowser;
 use PHPUnit\Framework\TestCase;
 

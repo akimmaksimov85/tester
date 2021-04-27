@@ -5,7 +5,7 @@
 
 declare(strict_types=1);
 
-namespace Akimmaksimov85\TesterBundle\Data\Factories\Functional\When;
+namespace Akimmaksimov85\TesterBundle\Data\Factories\When;
 
 interface WhenInterface
 {

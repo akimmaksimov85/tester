@@ -5,13 +5,13 @@
 
 declare(strict_types=1);
 
-namespace Akimmaksimov85\TesterBundle\Data\Factories\Functional\Then;
+namespace Akimmaksimov85\TesterBundle\Data\Factories\Then;
 
-use Akimmaksimov85\TesterBundle\Data\Factories\Functional\Then\Http\Code;
-use Akimmaksimov85\TesterBundle\Data\Factories\Functional\Then\Http\Count;
-use Akimmaksimov85\TesterBundle\Data\Factories\Functional\Then\Http\Has;
-use Akimmaksimov85\TesterBundle\Data\Factories\Functional\Then\Http\Partial;
-use Akimmaksimov85\TesterBundle\Data\Factories\Functional\Then\Http\Pattern;
+use Akimmaksimov85\TesterBundle\Data\Factories\Then\Http\Code;
+use Akimmaksimov85\TesterBundle\Data\Factories\Then\Http\Count;
+use Akimmaksimov85\TesterBundle\Data\Factories\Then\Http\Has;
+use Akimmaksimov85\TesterBundle\Data\Factories\Then\Http\Partial;
+use Akimmaksimov85\TesterBundle\Data\Factories\Then\Http\Pattern;
 use Akimmaksimov85\TesterBundle\Exceptions\TestException;
 
 class ThenFactory

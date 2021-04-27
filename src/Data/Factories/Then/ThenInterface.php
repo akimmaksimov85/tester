@@ -5,7 +5,7 @@
 
 declare(strict_types=1);
 
-namespace Akimmaksimov85\TesterBundle\Data\Factories\Functional\Then;
+namespace Akimmaksimov85\TesterBundle\Data\Factories\Then;
 
 interface ThenInterface
 {

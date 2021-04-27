@@ -5,11 +5,11 @@
 
 declare(strict_types=1);
 
-namespace Akimmaksimov85\TesterBundle\Functional;
+namespace Akimmaksimov85\TesterBundle;
 
 use Akimmaksimov85\TesterBundle\Constants\GWTConstants;
-use Akimmaksimov85\TesterBundle\Data\Factories\Functional\Then\ThenFactory;
-use Akimmaksimov85\TesterBundle\Data\Factories\Functional\When\WhenFactory;
+use Akimmaksimov85\TesterBundle\Data\Factories\Then\ThenFactory;
+use Akimmaksimov85\TesterBundle\Data\Factories\When\WhenFactory;
 use Akimmaksimov85\TesterBundle\Data\Seeders\SeederFactory;
 use Akimmaksimov85\TesterBundle\Data\TemplateEngines\TemplateEngine;
 use Akimmaksimov85\TesterBundle\Data\TemplateEngines\TemplateEngineInterface;
