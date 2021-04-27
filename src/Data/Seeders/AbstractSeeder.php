@@ -7,6 +7,7 @@ declare(strict_types=1);
 namespace Akimmaksimov85\TesterBundle\Data\Seeders;
 
 use Akimmaksimov85\TesterBundle\Exceptions\TestException;
+use Akimmaksimov85\TesterBundle\Services\MessageBus;
 use Faker\Factory;
 
 abstract class AbstractSeeder implements SeederInterface
@@ -23,6 +24,23 @@ abstract class AbstractSeeder implements SeederInterface
     protected array $data;
 
     /**
+     * Tester message bus
+     *
+     * @var MessageBus
+     */
+    protected MessageBus $messageBus;
+
+    /**
+     * AbstractSeeder constructor.
+     *
+     * @param MessageBus $messageBus Message bus
+     */
+    public function __construct(MessageBus $messageBus)
+    {
+        $this->messageBus = $messageBus;
+    }
+
+    /**
      * Run action
      *
      * @param string $method     UseCase method name
@@ -35,7 +53,7 @@ abstract class AbstractSeeder implements SeederInterface
     public function run(string $method, array $entityData): void
     {
         foreach ($entityData as $item) {
-            if (in_array($method, $this->getAllowedMethods()) === false) {
+            if (in_array($method, static::getAllowedMethods()) === false) {
                 throw new TestException(sprintf('Method %s not allowed for seeding', $method));
             }
 
@@ -169,11 +187,14 @@ abstract class AbstractSeeder implements SeederInterface
     abstract protected function getUseCasePath(): string;
 
     /**
-     * Get useCase path
+     * Execute command
      *
      * @param mixed $command Command
      *
-     * @return string
+     * @return void
      */
-    abstract protected function execute($command): string;
+    protected function execute($command): void
+    {
+        $this->messageBus->execute($command);
+    }
 }

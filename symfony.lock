@@ -124,6 +124,9 @@
     "sebastian/version": {
         "version": "4.0-dev"
     },
+    "symfony/amqp-messenger": {
+        "version": "5.2.x-dev"
+    },
     "symfony/browser-kit": {
         "version": "5.x-dev"
     },
@@ -153,6 +156,9 @@
     },
     "symfony/deprecation-contracts": {
         "version": "v2.2.0"
+    },
+    "symfony/doctrine-messenger": {
+        "version": "5.x-dev"
     },
     "symfony/dom-crawler": {
         "version": "5.x-dev"
@@ -219,6 +225,18 @@
     "symfony/intl": {
         "version": "5.x-dev"
     },
+    "symfony/messenger": {
+        "version": "4.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.3",
+            "ref": "e9a414b113ceadbf4e52abe37bf8f1b443f06ccb"
+        },
+        "files": [
+            "config/packages/messenger.yaml"
+        ]
+    },
     "symfony/polyfill-ctype": {
         "version": "1.22-dev"
     },
@@ -236,6 +254,9 @@
     },
     "symfony/polyfill-php80": {
         "version": "v1.22.1"
+    },
+    "symfony/redis-messenger": {
+        "version": "5.x-dev"
     },
     "symfony/routing": {
         "version": "5.1",

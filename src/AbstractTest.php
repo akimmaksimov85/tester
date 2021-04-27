@@ -96,6 +96,8 @@ abstract class AbstractTest extends WebTestCase
     public function tearDown(): void
     {
         $this->suiteData = [];
+
+        parent::tearDown();
     }
 
     /**

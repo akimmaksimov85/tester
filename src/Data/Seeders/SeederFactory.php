@@ -7,6 +7,8 @@ declare(strict_types=1);
 
 namespace Akimmaksimov85\TesterBundle\Data\Seeders;
 
+use Akimmaksimov85\TesterBundle\Services\MessageBus;
+
 class SeederFactory
 {
     /**
@@ -37,6 +39,6 @@ class SeederFactory
     {
         $seeder = sprintf($this->seedersPathTemplate, $entityName);
 
-        return new $seeder();
+        return new $seeder(new MessageBus());
     }
 }
