@@ -11,6 +11,8 @@ use Akimmaksimov85\TesterBundle\Services\MessageBus;
 
 class SeederFactory
 {
+    protected const SEEDER_NAME_POSTFIX = 'Seeder';
+
     /**
      * Seeder path template
      *
@@ -37,7 +39,7 @@ class SeederFactory
      */
     public function create(string $entityName): AbstractSeeder
     {
-        $seeder = sprintf($this->seedersPathTemplate, $entityName);
+        $seeder = $this->seedersPathTemplate . $entityName . self::SEEDER_NAME_POSTFIX;
 
         return new $seeder(new MessageBus());
     }
